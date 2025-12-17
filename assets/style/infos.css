@@ -39,7 +39,7 @@
         }
 
         .info-right {
-            background-color:var(--color_03);
+            background-color: var(--color-03);
             padding: 60px;
             display: flex;
             align-items: center;
