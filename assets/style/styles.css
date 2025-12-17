@@ -2,8 +2,8 @@
 
         body {
             font-family: 'Georgia', serif;
-            background-color: #ffffff;
-            color: #2c3e3e;
+            background-color:var(--color-05);
+            color:var(--color-04);
             line-height: 1.6;
             overflow-x: hidden;
             padding-top: 80px;
@@ -20,7 +20,7 @@
             grid-template-columns: 1fr 2fr 1fr;
             align-items: center;
             padding: 20px 40px;
-            background-color: #ffffff;
+            background-color:var(--color-05);
             position: fixed;
             top: 0;
             left: 0;
@@ -45,7 +45,7 @@
         .hamburger span {
             width: 25px;
             height: 3px;
-            background-color: #2c3e3e;
+            background-color:var(--color-04);
             transition: all 0.3s ease;
             border-radius: 2px;
         }
@@ -88,13 +88,13 @@
         }
 
         nav a:hover {
-            color: #FF4F33;
+            color:var(--color-03);
         }
 
         /* === FOOTER === */
         footer {
-            background-color: #2c4a4a;
-            color: white;
+            background-color:var(--color-04);
+            color:var(--color-05);
             padding: 60px 40px;
             margin-top: 80px;
         }
@@ -118,7 +118,7 @@
             font-size: 12px;
             line-height: 1.8;
             margin-bottom: 5px;
-            color: white;
+            color:var(--color-05);
             text-decoration: none;
             display: block;
         }
@@ -129,8 +129,8 @@
 
         .badge {
             display: inline-block;
-            background-color: white;
-            color: #2c4a4a;
+            background-color:var(--color-05);
+            color:var(--color-04);
             padding: 8px 15px;
             border-radius: 20px;
             font-size: 11px;

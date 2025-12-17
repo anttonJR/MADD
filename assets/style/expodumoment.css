@@ -12,7 +12,7 @@
         .expo-moment-header h2 {
             font-size: 72px;
             line-height: 1.2;
-            color: #000000;
+            color:var(--color_06);
             transform: rotate(-5deg);
             display: inline-block;
         }
@@ -31,7 +31,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0;
-            background-color: #FF4F33;
+            background-color:var(--color-03);
         }
 
         .expo-moment-left {
@@ -45,7 +45,7 @@
             width: 100%;
             max-width: 400px;
             height: 350px;
-            background: #d4c4b4;
+            background:var(--color-01);
             transform: translateY(150px);
         }
 
@@ -82,7 +82,7 @@
         .expo-moment-text {
             font-size: 18px;
             line-height: 1.4;
-            color: #000000;
+            color:var(--color-06);
             margin-bottom: 25px;
             font-family: 'Inria Serif', serif;
             font-weight: 400;

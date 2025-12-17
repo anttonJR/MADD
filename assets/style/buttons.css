@@ -3,8 +3,8 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background-color: #075056;
-            color: white;
+            background-color:var(--color-04);
+            color:var(--color-05);
             padding: 10px 22px;
             text-decoration: none;
             font-size: 14px;
@@ -22,11 +22,11 @@
         .btn svg {
             width: 18px;
             height: 18px;
-            stroke: white;
+            stroke:var(--color-05);
         }
 
         .btn:hover {
-            background-color: #054a52;
+            background-color:var(--color-04);
         }
 
 /* === SCROLL TO TOP BUTTON === */
@@ -47,8 +47,8 @@
             right: 30px;
             width: 50px;
             height: 50px;
-            background-color: #075056;
-            color: white;
+            background-color:var(--color-04);
+            color: var(--color-05);
             border: none;
             border-radius: 50%;
             cursor: pointer;
@@ -57,7 +57,7 @@
             justify-content: center;
             transition: all 0.3s ease;
             z-index: 998;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px var(--color_06);
         }
 
         .scroll-to-top.show {
@@ -66,13 +66,13 @@
         }
 
         .scroll-to-top:hover {
-            background-color: #054a52;
+            background-color:var(--color-04);
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 12px var(--color_06);
         }
 
         .scroll-to-top svg {
             width: 24px;
             height: 24px;
-            stroke: white;
+            stroke:var(--color-05);
         }
