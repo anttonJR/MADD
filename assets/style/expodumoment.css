@@ -1,0 +1,89 @@
+ /* === EXPOSITION DU MOMENT === */
+        .expo-moment {
+            margin: 120px 40px 40px 40px;
+        }
+
+        .expo-moment-header {
+            margin-bottom: 60px;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        .expo-moment-header h2 {
+            font-size: 72px;
+            line-height: 1.2;
+            color: #000000;
+            transform: rotate(-5deg);
+            display: inline-block;
+        }
+
+        .exposition-text {
+            display: inline-block;
+            padding-right: 100px;
+        }
+
+        .moment-text {
+            display: inline-block;
+            padding-left: 100px;
+        }
+
+        .expo-moment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            background-color: #FF4F33;
+        }
+
+        .expo-moment-left {
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .expo-moment-image {
+            width: 100%;
+            max-width: 400px;
+            height: 350px;
+            background: #d4c4b4;
+            transform: translateY(150px);
+        }
+
+        .expo-moment-right {
+            background-color: var(--color-05);
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .expo-moment-right h3 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-family: 'Inria Sans', sans-serif;
+        }
+
+        .expo-moment-subtitle {
+            font-size: 22px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-weight: 700;
+            font-family: 'Inria Serif', serif;
+        }
+
+        .expo-moment-date {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-family: 'Inria Serif', serif;
+        }
+
+        .expo-moment-text {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #000000;
+            margin-bottom: 25px;
+            font-family: 'Inria Serif', serif;
+            font-weight: 400;
+        }
