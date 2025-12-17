@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADD - Les Collections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #ffffff;
+            color: #2c3e3e;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e3e;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5744;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 400px;
+            margin: 40px;
+        }
+
+        .hero {
+            background-color: #2c4a4a;
+            height: 100%;
+            width: 60%;
+        }
+
+        .collections-title {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 48px;
+            font-weight: normal;
+            line-height: 1.2;
+        }
+
+        .intro-section {
+            padding: 60px 40px;
+            max-width: 800px;
+        }
+
+        .intro-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .intro-section p {
+            line-height: 1.8;
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 0 40px;
+            margin-top: 60px;
+        }
+
+        .collection-item {
+            position: relative;
+            padding: 60px 40px;
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .collection-item.white {
+            background-color: #ffffff;
+        }
+
+        .collection-item.coral {
+            background-color: #ff5744;
+        }
+
+        .collection-item.coral h3,
+        .collection-item.coral p {
+            color: #ffffff;
+        }
+
+        .collection-item img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .collection-item h3 {
+            font-size: 24px;
+            margin: 20px 0 15px 0;
+            font-weight: normal;
+        }
+
+        .collection-item p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2c4a4a;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+            align-self: flex-start;
+        }
+
+        .btn:hover {
+            background-color: #1a2e2e;
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 350px;
+            height: 280px;
+            background-color: #f5f5f5;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        footer {
+            background-color: #2c4a4a;
+            color: white;
+            padding: 60px 40px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 60px;
+            max-width: 1400px;
+        }
+
+        .footer-logo {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .footer-section h4 {
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 13px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            opacity: 0.7;
+        }
+
+        .social-badge {
+            display: inline-block;
+            background-color: white;
+            color: #2c4a4a;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 968px) {
+            .collection-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .hero-section {
+                height: 300px;
+            }
+
+            .collections-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MADD</div>
+        <nav>
+            <a href="#accueil">ACCUEIL</a>
+            <a href="#collections">COLLECTIONS</a>
+            <a href="#exposition">EXPOSITION</a>
+            <a href="#visiter">VISITER</a>
+            <a href="#infos">LE MADD & VOUS</a>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero"></div>
+        <h1 class="collections-title">LE MADD<br>LES COLLECTIONS</h1>
+    </div>
+
+    <section class="intro-section">
+        <h2>Les collections du madd-bordeaux réunissent près de 33 000 œuvres, du Moyen Âge à nos jours</h2>
+        <p>Le musée propose de la préhistoire (faïd Marseille et de Bordeaux) en cuisine, d'œuvres lythogrqhies, pièces d'orfèvrerie ainsi que en faïde, le mobilier, la costumerie, le tissage et des objets publicitaires. A la création contemporaine, ils s'enrichissent au...</p>
+        <p>Les collections couvrent ainsi une large période allant du Moyen Âge au XXIe siècle et s'articulent autour des collections des consonances pro-historique de Bordeaux et le verre des collections Faïenciers de Marseille.</p>
+    </section>
+
+    <div class="collection-grid">
+        <div class="collection-item white">
+            <div class="image-container">
+                <div style="width: 180px; height: 240px; background: linear-gradient(180deg, #4a7c7c 0%, #2c4a4a 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div style="width: 100px; height: 160px; background: #6b9f6b; border-radius: 50px; position: absolute;"></div>
+                </div>
+            </div>
+            <h3>Vases à fleurs</h3>
+            <p>Vases et fleurs – les usines verrières ont cru voire leur pa pas d'embouteillage des années 1920 années à été devenir du verre et du cristal de Bordeaux.</p>
+            <a href="#" class="btn">VOIR PLUS</a>
+        </div>
+
+        <div class="collection-item coral">
+        </div>
+
+        <div class="collection-item coral">
+        </div>
+
+        <div class="collection-item white">
+            <div class="image-container">
+                <div style="width: 280px; height: 220px; background: #8b6b4a; border: 10px solid #d4a574; position: relative;">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; background: #c9886f; border-radius: 50%;"></div>
+                </div>
+            </div>
+            <h3>Les collections des XVIIe et XVIIIe siècles</h3>
+            <p>À travers des chefs d'oeuvres de la peinture à une splendide témoignage d'ameublement d'exception abordons la décors. Bordeaux meubles, tableaux, tissus.</p>
+            <a href="#" class="btn">VOIR PLUS</a>
+        </div>
+
+        <div class="collection-item white">
+            <div class="image-container" style="background: #c74a44;">
+                <div style="width: 280px; height: 200px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <div style="width: 120px; height: 120px; background: rgba(255,255,255,0.3); border-radius: 50%;"></div>
+                </div>
+            </div>
+            <h3>Les collections Jeanvrot</h3>
+            <p>Le peintre Gilbert Jeanvrot réunit ici œuvre d'art, les peintures ainsi que les illustrations des œuvres de ses Boukhara.</p>
+            <a href="#" class="btn">VOIR PLUS</a>
+        </div>
+
+        <div class="collection-item coral">
+        </div>
+
+        <div class="collection-item coral">
+            <div class="image-container" style="background: transparent;">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; padding: 20px;">
+                    <div style="width: 70px; height: 70px; background: #d4a574; border-radius: 50%;"></div>
+                    <div style="width: 70px; height: 70px; background: #8b6b4a; border-radius: 50%;"></div>
+                    <div style="width: 70px; height: 70px; background: #c74a44; border-radius: 50%;"></div>
+                    <div style="width: 70px; height: 70px; background: #4a7c7c; border-radius: 50%;"></div>
+                    <div style="width: 70px; height: 70px; background: #6b9f6b; border-radius: 50%;"></div>
+                    <div style="width: 70px; height: 70px; background: #a67c52; border-radius: 50%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="collection-item white">
+            <h3>La faïence à Bordeaux au XIXe siècle</h3>
+            <p>La France produit de fin XIXe siècle cette collection de réalité et plaisirs de tables et les productions XVIII 1895, basait référence depuis début dans Verreries bleues 1895.</p>
+            <a href="#" class="btn">VOIR PLUS</a>
+        </div>
+
+        <div class="collection-item white">
+            <div class="image-container" style="background: #d4c4b4;">
+                <div style="width: 150px; height: 200px; background: #6b9f9f; border-radius: 5px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);"></div>
+            </div>
+            <h3>L'Art nouveau et l'Art déco à Bordeaux</h3>
+            <p>Les périodes décorations au XXe siècle remarquable, avec Bordeaux comme centre artistique et France, une période immensément créatrice.</p>
+            <a href="#" class="btn">VOIR PLUS</a>
+        </div>
+
+        <div class="collection-item coral">
+        </div>
+
+        <div class="collection-item coral">
+            <div class="image-container" style="background: transparent;">
+                <div style="width: 250px; height: 220px; background: linear-gradient(135deg, #f5e6e8 0%, #d4c4b4 50%, #c4a494 100%); box-shadow: 0 10px 30px rgba(0,0,0,0.2);"></div>
+            </div>
+        </div>
+
+        <div class="collection-item white">
+            <h3>Le design dans les collections</h3>
+            <p>Mobilier dans l'histoire ou Philippe Starck et ses formidables créations font vivre de ce 20ème siècle à côté, Bordeaux de 1950 et 1970, le design des mobiliers design.</p>
+            <a href="#" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">MADD</div>
+            </div>
+            
+            <div>
+                <div class="footer-section">
+                    <h4>Le madd-bordeaux</h4>
+                    <p>Musée des arts décoratifs</p>
+                    <p>et du design</p>
+                    <p>39 rue Bouffard</p>
+                    <p>33000 Bordeaux</p>
+                    <p>Tél : 05 56 10 14 00</p>
+                </div>
+                <div class="social-badge">SUIVEZ-NOUS</div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <a href="#">VISITES ET TARIFS</a>
+                <a href="#">COLLECTIONS</a>
+                <a href="#">EXPOSITIONS</a>
+                <a href="#">AGENDA</a>
+                <a href="#">BOUTIQUE</a>
+                <a href="#">CONTACTS</a>
+                <a href="#">MENTIONS LÉGALES</a>
+                <a href="#">PLAN DU SITE</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
