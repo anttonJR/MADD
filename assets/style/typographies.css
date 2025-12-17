@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* === TYPOGRAPHY === */
+.title-inria {
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+    display: inline-block;
+}
+
+/* titre */
+.title-1 {
+    font-size: 64px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+.title-2 {
+    font-size: 48px;
+    font-family: "Inria Sans", sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.title-3 {
+    font-size: 32px;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.title-4-sans-serif {
+    font-size: 20px;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.title-4-serif {
+    font-size: 20px;
+    font-family: "Inria Serif", serif;
+    font-weight: 550;
+}
+
+.text {
+    font-size: 18px;
+    font-family: "Inria Serif", serif;
+}
+
+.tag {
+    font-size: 14px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+}
