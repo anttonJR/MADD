@@ -8,7 +8,7 @@
         .info-header h2 {
             font-size: 72px;
             letter-spacing: -1px;
-            color: #000000;
+            color:var(--color_06);
             line-height: 1.2;
         }
 
@@ -54,7 +54,7 @@
         }
 
         .info-right {
-            background-color: #FF4F33;
+            background-color:var(--color_03);
             padding: 60px;
             display: flex;
             align-items: center;
