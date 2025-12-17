@@ -1,0 +1,42 @@
+.programme-section {
+    margin: clamp(20px, 5vw, 40px);
+}
+
+.programme-header {
+    padding: clamp(15px, 5vw, 40px);
+    margin-top: clamp(60px, 10vw, 150px);
+    margin-bottom: clamp(15px, 4vw, 20px);
+}
+
+.programme-header h2 {
+    font-size: clamp(32px, 8vw, 72px);
+}
+
+.programme-grid {
+    grid-template-columns: 1fr;
+    border-top: clamp(8px, 2vw, 15px) solid #FF4F33;
+}
+
+.programme-item {
+    padding: clamp(20px, 5vw, 30px);
+    min-height: auto;
+    border-bottom: clamp(8px, 2vw, 15px) solid #FF4F33;
+}
+
+.date {
+    font-size: clamp(48px, 12vw, 80px);
+    margin-right: clamp(8px, 2vw, 15px);
+}
+
+.month {
+    font-size: clamp(16px, 4vw, 22px);
+    margin-bottom: clamp(15px, 4vw, 20px);
+}
+
+.event-type {
+    font-size: clamp(16px, 4vw, 22px);
+}
+
+.event-title {
+    font-size: clamp(18px, 5vw, 26px);
+}
