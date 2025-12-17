@@ -58,32 +58,14 @@
         }
 
         .expo-moment-right h3 {
-            font-size: 40px;
-            font-weight: 700;
             margin-bottom: 25px;
-            font-family: 'Inria Sans', sans-serif;
         }
 
-        .expo-moment-subtitle {
-            font-size: 22px;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            font-weight: 700;
-            font-family: 'Inria Serif', serif;
-        }
-
-        .expo-moment-date {
-            font-size: 20px;
-            font-weight: 700;
+        .expo-moment-right h4 {
             margin-bottom: 30px;
-            font-family: 'Inria Serif', serif;
         }
 
-        .expo-moment-text {
-            font-size: 18px;
+        .expo-moment-right p {
             line-height: 1.4;
-            color:var(--color-06);
             margin-bottom: 25px;
-            font-family: 'Inria Serif', serif;
-            font-weight: 400;
         }
