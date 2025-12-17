@@ -38,21 +38,6 @@
             margin-bottom: 30px;
         }
 
-        .info-item h4 {
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            font-family: 'Inria Sans', sans-serif;
-        }
-
-        .info-item p {
-            font-size: 20px;
-            line-height: 1.6;
-            color: #555;
-            font-family: 'Inria Serif', serif;
-            font-weight: 400;
-        }
-
         .info-right {
             background-color:var(--color_03);
             padding: 60px;
