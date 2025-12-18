@@ -66,3 +66,45 @@ menuToggle.addEventListener('change', (e) => {
         document.body.style.overflow = '';
     }
 });
+
+// Animation du + qui devient flèche au hover
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach(button => {
+    const svg = button.querySelector('svg');
+    const originalSVG = svg.outerHTML;
+    
+    // SVG flèche vers la droite
+    const arrowSVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
+    
+    button.addEventListener('mouseenter', () => {
+        const currentSvg = button.querySelector('svg');
+        currentSvg.classList.add('fade-out');
+        setTimeout(() => {
+            const svg = button.querySelector('svg');
+            if (svg) svg.outerHTML = arrowSVG;
+            const newSvg = button.querySelector('svg');
+            if (newSvg) {
+                newSvg.classList.remove('fade-out');
+                newSvg.classList.add('fade-in');
+            }
+        }, 150);
+    });
+    
+    button.addEventListener('mouseleave', () => {
+        const currentSvg = button.querySelector('svg');
+        if (currentSvg) {
+            currentSvg.classList.remove('fade-in');
+            currentSvg.classList.add('fade-out');
+            setTimeout(() => {
+                const svg = button.querySelector('svg');
+                if (svg) svg.outerHTML = originalSVG;
+                const newSvg = button.querySelector('svg');
+                if (newSvg) {
+                    newSvg.classList.remove('fade-out');
+                    newSvg.classList.add('fade-in');
+                }
+            }, 150);
+        }
+    });
+});
