@@ -4,268 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MADD - Les Collections</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #ffffff;
-            color: #2c3e3e;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background-color: #ffffff;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        nav {
-            display: flex;
-            gap: 30px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #2c3e3e;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff5744;
-        }
-
-        .hero-section {
-            position: relative;
-            height: 400px;
-            margin: 40px;
-        }
-
-        .hero {
-            background-color: #2c4a4a;
-            height: 100%;
-            width: 60%;
-        }
-
-        .collections-title {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 48px;
-            font-weight: normal;
-            line-height: 1.2;
-        }
-
-        .intro-section {
-            padding: 60px 40px;
-            max-width: 800px;
-        }
-
-        .intro-section h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            font-weight: normal;
-        }
-
-        .intro-section p {
-            line-height: 1.8;
-            font-size: 15px;
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        .collection-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            padding: 0 40px;
-            margin-top: 60px;
-        }
-
-        .collection-item {
-            position: relative;
-            padding: 60px 40px;
-            min-height: 450px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .collection-item.white {
-            background-color: #ffffff;
-        }
-
-        .collection-item.coral {
-            background-color: #ff5744;
-        }
-
-        .collection-item.coral h3,
-        .collection-item.coral p {
-            color: #ffffff;
-        }
-
-        .collection-item img {
-            width: 100%;
-            max-width: 350px;
-            height: auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-
-        .collection-item h3 {
-            font-size: 24px;
-            margin: 20px 0 15px 0;
-            font-weight: normal;
-        }
-
-        .collection-item p {
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #2c4a4a;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background-color 0.3s;
-            align-self: flex-start;
-        }
-
-        .btn:hover {
-            background-color: #1a2e2e;
-        }
-
-        .image-container {
-            width: 100%;
-            max-width: 350px;
-            height: 280px;
-            background-color: #f5f5f5;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        footer {
-            background-color: #2c4a4a;
-            color: white;
-            padding: 60px 40px;
-            margin-top: 80px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            gap: 60px;
-            max-width: 1400px;
-        }
-
-        .footer-logo {
-            font-size: 36px;
-            font-weight: bold;
-            letter-spacing: 3px;
-        }
-
-        .footer-section h4 {
-            font-size: 14px;
-            margin-bottom: 15px;
-            font-weight: normal;
-            text-transform: uppercase;
-        }
-
-        .footer-section p,
-        .footer-section a {
-            font-size: 13px;
-            line-height: 1.8;
-            margin-bottom: 8px;
-            color: white;
-            text-decoration: none;
-            display: block;
-        }
-
-        .footer-section a:hover {
-            opacity: 0.7;
-        }
-
-        .social-badge {
-            display: inline-block;
-            background-color: white;
-            color: #2c4a4a;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 968px) {
-            .collection-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-            nav {
-                flex-wrap: wrap;
-                gap: 15px;
-            }
-
-            .hero-section {
-                height: 300px;
-            }
-
-            .collections-title {
-                font-size: 32px;
-            }
-        }
-    </style>
+    
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/variables.css">
+    <link rel="stylesheet" href="assets/style/typographies.css">
+    <link rel="stylesheet" href="assets/style/styles.css">
+    <link rel="stylesheet" href="assets/style/buttons.css">
+    <link rel="stylesheet" href="assets/style/responsive.css">
+    <link rel="stylesheet" href="assets/style/collections.css">
 </head>
 <body>
+    <!-- HEADER -->
+
     <header>
-        <div class="logo">MADD</div>
+        <a href="/">
+            <img src="assets/img/logo.svg" alt="">
+        </a>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav>
-            <a href="#accueil">ACCUEIL</a>
-            <a href="#collections">COLLECTIONS</a>
-            <a href="#exposition">EXPOSITION</a>
-            <a href="#visiter">VISITER</a>
-            <a href="#infos">LE MADD & VOUS</a>
+            <a href="#musee">LE MUSÉE</a>
+            <a href="/collections.html">COLLECTIONS</a>
+            <a href="#programme">PROGRAMME</a>
+            <a href="#visite">VOTRE VISITE</a>
+            <a href="#madd">LE MADD ET VOUS</a>
         </nav>
     </header>
 
     <div class="hero-section">
         <div class="hero"></div>
-        <h1 class="collections-title">LE MADD<br>LES COLLECTIONS</h1>
+        <h1 class="title-2">LE MADD<br>LES COLLECTIONS</h1>
     </div>
 
     <section class="intro-section">
-        <h2>Les collections du madd-bordeaux réunissent près de 33 000 œuvres, du Moyen Âge à nos jours</h2>
-        <p>Le musée propose de la préhistoire (faïd Marseille et de Bordeaux) en cuisine, d'œuvres lythogrqhies, pièces d'orfèvrerie ainsi que en faïde, le mobilier, la costumerie, le tissage et des objets publicitaires. A la création contemporaine, ils s'enrichissent au...</p>
-        <p>Les collections couvrent ainsi une large période allant du Moyen Âge au XXIe siècle et s'articulent autour des collections des consonances pro-historique de Bordeaux et le verre des collections Faïenciers de Marseille.</p>
+        <h2 class="title-3">Les collections du madd-bordeaux réunissent près de 33 000 œuvres, du Moyen Âge à nos jours</h2>
+        <p class="text">Le musée propose de la préhistoire (faïd Marseille et de Bordeaux) en cuisine, d'œuvres lythogrqhies, pièces d'orfèvrerie ainsi que en faïde, le mobilier, la costumerie, le tissage et des objets publicitaires. A la création contemporaine, ils s'enrichissent au...</p>
+        <p class="text">Les collections couvrent ainsi une large période allant du Moyen Âge au XXIe siècle et s'articulent autour des collections des consonances pro-historique de Bordeaux et le verre des collections Faïenciers de Marseille.</p>
     </section>
 
     <div class="collection-grid">
