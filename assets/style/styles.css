@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+        /* === IMAGES BASE STYLES === */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
         body {
             background-color:var(--color-05);
             color:var(--color-02);
@@ -18,7 +25,7 @@
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
             align-items: center;
-            padding: 20px 40px;
+            padding: 12px 40px;
             background-color:var(--color-05);
             position: fixed;
             top: 0;

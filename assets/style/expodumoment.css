@@ -47,6 +47,7 @@
         .expo-moment-image img {
             width: 450px;
             height: auto;
+            object-fit: cover;
         }
 
         .expo-moment-right {

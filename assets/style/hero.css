@@ -45,15 +45,16 @@
 
 .hero-image {
     position: absolute;
-    right: 120px;
-    bottom: -70px;
+    right: clamp(20px, 8vw, 120px);
+    bottom: clamp(-40px, -8vw, -70px);
     background: var(--color-01);
 }
 
 .hero-image img {
-    width: 450px;
+    width: clamp(280px, 45vw, 450px);
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 .museum-info {

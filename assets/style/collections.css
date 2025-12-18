@@ -118,33 +118,3 @@
 .image-container img {
     max-width: 450px;
 }
-
-@media (max-width: 968px) {
-    .collection-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .collection-item.white {
-        padding-top: 40px;
-    }
-
-    .collection-item.coral {
-        margin-top: 200px;
-    }
-
-    .collection-item.coral .image-container {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .hero-section {
-        height: 300px;
-    }
-
-    .title-2 {
-        font-size: 32px;
-    }
-}

@@ -1,8 +1,23 @@
 /* === RESPONSIVE === */
         @media (max-width: 968px) {
+            /* === IMAGES RESPONSIVE === */
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .hero-image img,
+            .expo-moment-image img,
+            .image-container img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
             header {
                 grid-template-columns: 1fr 1fr;
-                padding: clamp(15px, 5vw, 30px);
+                padding: 8px 15px;
                 text-align: center;
             }
 
@@ -55,17 +70,18 @@
                 grid-template-columns: 1fr;
                 margin: clamp(20px, 5vw, 40px);
                 min-height: auto;
-                gap: 20px;
+                gap: 0;
             }
 
             .hero-left {
                 padding: clamp(40px, 8vw, 80px) clamp(20px, 6vw, 60px);
-                margin-bottom: 20px;
+                margin-bottom: 0;
+                text-align: center;
             }
 
             .hero-left h1 {
                 font-size: clamp(32px, 8vw, 64px);
-                margin-bottom: clamp(40px, 10vw, 80px);
+                margin-bottom: clamp(15px, 5vw, 40px);
                 transform: rotate(-8deg) translateY(20px);
             }
 
@@ -76,14 +92,27 @@
 
             .hero-right {
                 position: relative;
-                overflow: hidden;
+                overflow: visible;
+                display: flex;
+                flex-direction: column;
             }
 
             .hero-image {
                 position: static;
                 width: 100%;
-                height: clamp(250px, 60vw, 400px);
-                margin-bottom: 20px;
+                height: auto;
+                max-height: clamp(250px, 70vw, 400px);
+                margin-bottom: clamp(20px, 5vw, 30px);
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .hero-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
 
             .museum-info {
@@ -92,8 +121,9 @@
                 top: 0;
                 bottom: auto;
                 max-width: 100%;
-                margin: clamp(20px, 5vw, 40px);
+                margin: 0 clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px);
                 padding: clamp(15px, 5vw, 25px);
+                background-color: var(--color-05);
             }
 
             .museum-info p {
@@ -113,7 +143,7 @@
 
             /* Exposition du moment */
             .expo-moment {
-                margin: clamp(60px, 10vw, 120px) clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px);
+                margin: clamp(150px, 25vw, 220px) clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px);
             }
 
             .expo-moment-header {
@@ -137,11 +167,14 @@
 
             .expo-moment-left {
                 padding: clamp(30px, 5vw, 60px);
+                position: static;
             }
 
             .expo-moment-image {
                 height: clamp(250px, 60vw, 350px);
-                transform: translateY(clamp(40px, 10vw, 150px));
+                transform: translateY(0);
+                margin-bottom: clamp(150px, 35vw, 250px);
+                background: var(--color-01);
             }
 
             .expo-moment-right {
@@ -287,6 +320,29 @@
         }
 
         @media (max-width: 480px) {
+            /* === IMAGES MOBILE OPTIMIZED === */
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .hero-image img,
+            .expo-moment-image img,
+            .image-container img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            .hero-image img {
+                max-height: 250px;
+            }
+
+            .expo-moment-image img {
+                max-height: 200px;
+            }
+
             html, body {
                 overflow-x: hidden;
                 width: 100%;
@@ -374,16 +430,19 @@
 
             .hero-right {
                 background-color:var(--color-04);
-                min-height: 300px;
+                min-height: auto;
                 position: relative;
-                overflow: hidden;
+                overflow: visible;
+                display: flex;
+                flex-direction: column;
             }
 
             .hero-image {
                 position: static;
                 width: 100%;
-                height: 250px;
-                margin-bottom: 20px;
+                height: 200px;
+                margin-bottom: 25px;
+                flex-shrink: 0;
             }
 
             .museum-info {
@@ -392,8 +451,9 @@
                 top: 0;
                 bottom: auto;
                 max-width: 100%;
-                margin: 15px;
+                margin: 0 15px 15px 15px;
                 padding: 12px 15px;
+                background-color: var(--color-05);
             }
 
             .museum-info p {
@@ -457,6 +517,8 @@
                 height: 200px;
                 transform: translateY(0px);
                 max-width: 100%;
+                margin-bottom: clamp(120px, 30vw, 180px);
+                background: var(--color-01);
             }
 
             .expo-moment-right {
