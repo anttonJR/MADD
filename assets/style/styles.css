@@ -120,6 +120,7 @@
             color:var(--color-05);
             text-decoration: none;
             display: block;
+            font-family: "Inria Serif", serif;
         }
 
         .footer-section a:hover {
