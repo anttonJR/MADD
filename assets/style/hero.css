@@ -45,11 +45,15 @@
 
         .hero-image {
             position: absolute;
-            right: 80px;
+            right: 120px;
             bottom: -70px;
-            width: 400px;
-            height: 400px;
             background:var(--color-01);
+        }
+
+        .hero-image img {
+            width: 450px;
+            height: auto;
+            display: block;
         }
 
         .museum-info {

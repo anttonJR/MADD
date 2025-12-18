@@ -42,11 +42,12 @@
         }
 
         .expo-moment-image {
-            width: 100%;
-            max-width: 400px;
-            height: 350px;
             background:var(--color-01);
-            transform: translateY(150px);
+            transform: translateY(200px);
+        }
+        .expo-moment-image img {
+            width: 450px;
+            height: auto;
         }
 
         .expo-moment-right {
