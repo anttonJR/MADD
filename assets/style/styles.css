@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
         body {
-            font-family: 'Georgia', serif;
             background-color:var(--color-05);
-            color:var(--color-06);
+            color:var(--color-02);
             line-height: 1.6;
             overflow-x: hidden;
             padding-top: 80px;
@@ -76,7 +75,7 @@
 
         nav a {
             text-decoration: none;
-            color: #2c3e3e;
+            color: var(--color-02);
             font-size: 16px;
             text-transform: uppercase;
             letter-spacing: 0.5px;

@@ -12,7 +12,6 @@
         .expo-moment-header h2 {
             font-size: 72px;
             line-height: 1.2;
-            color:var(--color_06);
             transform: rotate(-5deg);
             display: inline-block;
         }
