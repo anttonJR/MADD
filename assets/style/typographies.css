@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-/* === TYPOGRAPHY === */
-.title-inria {
-    font-family: 'Inria Sans', sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    text-transform: uppercase;
-    transform: rotate(-3deg);
-    transform-origin: left center;
-    display: inline-block;
-}
-
 /* titre */
 .title-1 {
     font-size: 64px;
@@ -19,10 +8,15 @@
     font-style: italic;
 }
 
+/* titre italiquz */
 .title-2 {
-    font-size: 48px;
-    font-family: "Inria Sans", sans-serif;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
     font-style: italic;
+    text-transform: uppercase;
+    transform: rotate(-3deg);
+    transform-origin: left center;
+    display: inline-block;
 }
 
 .title-3 {
