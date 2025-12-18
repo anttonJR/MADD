@@ -30,10 +30,10 @@
 
     .hero-section .title-2 {
         position: absolute;
-        right: 0;
+        left: 50%;
         top: 50%;
-        transform: translateY(-50%) rotate(-5deg);
-        margin-right: clamp(10px, 5vw, 20px);
+        transform: translateX(-50%) translateY(-50%) rotate(-5deg);
+        margin: 0;
         font-size: clamp(32px, 8vw, 64px);
         line-height: 1.3;
         text-align: center;
@@ -162,12 +162,13 @@
 
     .hero-section .title-2 {
         position: absolute;
-        right: 0;
+        left: 50%;
         top: 50%;
-        transform: translateY(-50%) rotate(-5deg);
-        margin-right: clamp(8px, 3vw, 15px);
+        transform: translateX(-50%) translateY(-50%) rotate(-5deg);
+        margin: 0;
         font-size: clamp(20px, 6vw, 40px);
         line-height: 1.2;
+        text-align: center;
     }
 
     .intro-section {
