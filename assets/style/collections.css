@@ -115,6 +115,10 @@
     justify-content: center;
 }
 
+.image-container img {
+    max-width: 450px;
+}
+
 @media (max-width: 968px) {
     .collection-grid {
         grid-template-columns: 1fr;
