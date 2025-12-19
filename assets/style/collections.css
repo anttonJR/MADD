@@ -118,3 +118,17 @@
 .image-container img {
     max-width: 450px;
 }
+
+.texte-a-gauche {
+    text-align: left;
+}
+.texte-a-gauche .btn {
+    align-self: flex-start;
+}
+.texte-a-droite {
+    text-align: right;
+}
+.texte-a-droite .btn {
+    align-self: flex-end;
+}
+
