@@ -1,72 +1,73 @@
- /* === EXPOSITION DU MOMENT === */
-        .expo-moment {
-            margin: 120px 40px 40px 40px;
-        }
+/* === EXPOSITION DU MOMENT === */
+.expo-moment {
+    margin: 120px 40px 40px 40px;
+}
 
-        .expo-moment-header {
-            margin-bottom: 60px;
-            margin-top: 200px;
-            text-align: center;
-        }
+.expo-moment-header {
+    margin-bottom: 60px;
+    margin-top: 200px;
+    text-align: center;
+}
 
-        .expo-moment-header h2 {
-            font-size: 72px;
-            line-height: 1.2;
-            transform: rotate(-5deg);
-            display: inline-block;
-        }
+.expo-moment-header h2 {
+    font-size: 72px;
+    line-height: 1.2;
+    transform: rotate(-5deg);
+    display: inline-block;
+}
 
-        .exposition-text {
-            display: inline-block;
-            padding-right: 100px;
-        }
+.exposition-text {
+    display: inline-block;
+    padding-right: 100px;
+}
 
-        .moment-text {
-            display: inline-block;
-            padding-left: 100px;
-        }
+.moment-text {
+    display: inline-block;
+    padding-left: 100px;
+}
 
-        .expo-moment-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0;
-            background-color:var(--color-03);
-        }
+.expo-moment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background-color: var(--color-03);
+}
 
-        .expo-moment-left {
-            padding: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.expo-moment-left {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .expo-moment-image {
-            background:var(--color-01);
-            transform: translateY(200px);
-        }
-        .expo-moment-image img {
-            width: 450px;
-            height: auto;
-            object-fit: cover;
-        }
+.expo-moment-image {
+    background: var(--color-01);
+    transform: translateY(200px);
+}
 
-        .expo-moment-right {
-            background-color: var(--color-05);
-            padding: 60px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+.expo-moment-image img {
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+}
 
-        .expo-moment-right h3 {
-            margin-bottom: 25px;
-        }
+.expo-moment-right {
+    background-color: var(--color-05);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-        .expo-moment-right h4 {
-            margin-bottom: 30px;
-        }
+.expo-moment-right h3 {
+    margin-bottom: 25px;
+}
 
-        .expo-moment-right p {
-            line-height: 1.4;
-            margin-bottom: 25px;
-        }
+.expo-moment-right h4 {
+    margin-bottom: 30px;
+}
+
+.expo-moment-right p {
+    line-height: 1.4;
+    margin-bottom: 25px;
+}

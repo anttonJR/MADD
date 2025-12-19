@@ -1,56 +1,56 @@
- /* === INFORMATIONS PRATIQUES === */
-        .info-header {
-            margin-top: 130px;
-            margin-bottom: 60px;
-            text-align: center;
-        }
+/* === INFORMATIONS PRATIQUES === */
+.info-header {
+    margin-top: 130px;
+    margin-bottom: 60px;
+    text-align: center;
+}
 
-        .info-header h2 {
-            font-size: 72px;
-            letter-spacing: -1px;
-            line-height: 1.2;
-        }
+.info-header h2 {
+    font-size: 72px;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
 
-        .info-text {
-            display: inline-block;
-            padding-right: 110px;
-        }
+.info-text {
+    display: inline-block;
+    padding-right: 110px;
+}
 
-        .pratiques-text {
-            display: inline-block;
-            padding-left: 100px;
-        }
+.pratiques-text {
+    display: inline-block;
+    padding-left: 100px;
+}
 
-        .info-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin: 40px;
-            gap: 0;
-        }
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    gap: 0;
+}
 
-        .info-left {
-            padding: 60px;
-            background-color: var(--color-05);
-        }
+.info-left {
+    padding: 60px;
+    background-color: var(--color-05);
+}
 
-        .info-item {
-            margin-bottom: 30px;
-        }
+.info-item {
+    margin-bottom: 30px;
+}
 
-        .info-right {
-            background-color: var(--color-03);
-            padding: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: visible;
-        }
+.info-right {
+    background-color: var(--color-03);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+}
 
-        .map-container {
-            width: 100%;
-            max-width: 450px;
-            height: 450px;
-            background: var(--color-01);
-            transform: translateX(-180px) translateY(-10px);
-        }
+.map-container {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    background: var(--color-01);
+    transform: translateX(-180px) translateY(-10px);
+}
