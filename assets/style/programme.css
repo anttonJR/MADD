@@ -1,12 +1,15 @@
 /* === PROGRAMME SECTION === */
 .programme-section {
-    margin: 40px;
+    margin-top: 300px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .programme-header {
     background-color:var(--color-05);
     padding: 20px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     margin-top: 150px;
     text-align: center;
 }
