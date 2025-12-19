@@ -1,4 +1,46 @@
 /* === RESPONSIVE === */
+
+@media screen and (max-width: 1480px) {
+    .hero-right {
+        position: relative;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-image {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-height: clamp(250px, 70vw, 400px);
+        margin-bottom: clamp(20px, 5vw, 30px);
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .museum-info {
+        position: static;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        max-width: 100%;
+        margin: 0 clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px);
+        padding: clamp(15px, 5vw, 25px);
+        background-color: var(--color-05);
+        flex-grow: 1;
+    }
+}
+
+
 @media (max-width: 968px) {
 
     /* === IMAGES RESPONSIVE === */
@@ -91,7 +133,15 @@
         padding-left: clamp(0px, 3vw, 30px);
     }
 
-    .hero-right {
+    .museum-info {
+        margin: 0;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    /* .hero-right {
         position: relative;
         overflow: visible;
         display: flex;
@@ -113,7 +163,7 @@
     .hero-image img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .museum-info {
@@ -125,7 +175,7 @@
         margin: 0 clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px) clamp(20px, 5vw, 40px);
         padding: clamp(15px, 5vw, 25px);
         background-color: var(--color-05);
-    }
+    } */
 
     .museum-info p {
         font-size: clamp(14px, 4vw, 20px);
@@ -135,6 +185,7 @@
     .info-icons {
         flex-wrap: wrap;
         gap: clamp(8px, 2vw, 12px);
+        flex-direction: column;
     }
 
     .info-icons a {
